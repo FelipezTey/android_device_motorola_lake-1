@@ -17,13 +17,16 @@
 # Inherit some common Lineage stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Device
 $(call inherit-product, device/motorola/lake/device.mk)
+
+# Sakura  stuff.
+SAKURA_MAINTAINER := FelipeZty
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # A/B updater
 AB_OTA_UPDATER := true
