@@ -99,7 +99,7 @@ void vendor_load_device_properties()
         /* moto g(7) plus (Unlocked) */
         property_override_device("ro.build.description", "lake-user 10 QPW30.61-21 d18ed release-keys");
         for (const auto &source : ro_props_default_source_order) {
-            set_ro_build_prop(source, "fingerprint", "motorola/lake_retail/lake:10/QPW30.61-18/d18ed:user/release-keys");
+            set_ro_build_prop(source, "fingerprint", "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys");
             set_ro_product_prop(source, "device", "lake");
             set_ro_product_prop(source, "model", "moto g(7) plus");
         }
